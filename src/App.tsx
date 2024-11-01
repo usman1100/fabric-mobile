@@ -1,15 +1,9 @@
+import { Container, Typography } from "@mui/material";
+
 export default function App() {
   return (
-    <div>
-      <h1
-        style={{
-          fontSize: "7rem",
-          textAlign: "center",
-          color: 'darkblue'
-        }}
-      >
-        Fabric Mobile
-      </h1>
-    </div>
+    <Container maxWidth="xl">
+      <Typography variant="h1">Fabric Mobile</Typography>
+    </Container>
   );
 }
