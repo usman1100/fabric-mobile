@@ -5,6 +5,7 @@ export default function App() {
         style={{
           fontSize: "7rem",
           textAlign: "center",
+          color: 'darkblue'
         }}
       >
         Fabric Mobile
