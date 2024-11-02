@@ -12,9 +12,11 @@ export default defineConfig({
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "mask-icon.svg"],
       manifest: {
         name: "Fabric Mobile",
-        short_name: "Fabric",
+        short_name: "Fabric Mobile",
         description: "Mechanical assets management",
-        theme_color: "#ffffff",
+        background_color: "#FFFFFF",
+        theme_color: "#0D1824",
+        display: "standalone",
         icons: [
           {
             src: "pwa-192x192.png",
