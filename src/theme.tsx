@@ -1,5 +1,4 @@
 import { createTheme } from "@mui/material/styles";
-import { red } from "@mui/material/colors";
 
 export const theme = createTheme({
   colorSchemes: {
@@ -23,13 +22,18 @@ export const theme = createTheme({
   },
   palette: {
     primary: {
-      main: "#556cd6",
+      main: "#403D58",
     },
     secondary: {
-      main: "#19857b",
+      main: "#DBD56E",
     },
-    error: {
-      main: red.A400,
+    text: {
+      primary: "#403D58",
+      secondary: "#F2EFEA",
+    },
+    background: {
+      default: "#F2EFEA",
+      paper: "#F2EFEA",
     },
   },
 });

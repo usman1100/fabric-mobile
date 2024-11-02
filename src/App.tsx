@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import {
   BottomNav,
   Content,
@@ -17,6 +17,10 @@ export default function App() {
 
       <Content p={2}>
         <Typography variant="h3">Welcome</Typography>
+
+        <Button variant="contained" color="secondary">
+          Get Started
+        </Button>
       </Content>
 
       <BottomNav>
