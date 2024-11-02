@@ -5,8 +5,8 @@ import {
   NavigationBar,
   PageContainer,
   TopBar,
+  TopNavbar
 } from "./components/shared";
-import { TopNavbar } from "./components/shared/TopNavbar";
 
 export default function App() {
   return (
