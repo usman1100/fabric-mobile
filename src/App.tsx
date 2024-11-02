@@ -1,35 +1,29 @@
-import { Container, Typography } from "@mui/material";
-import { useState } from "react";
+import { Typography } from "@mui/material";
+import {
+  BottomNav,
+  Content,
+  NavigationBar,
+  PageContainer,
+  TopBar,
+} from "./components/shared";
+import { TopNavbar } from "./components/shared/TopNavbar";
 
 export default function App() {
-  const [src, setSrc] = useState<string | undefined>(undefined);
-
-  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const file = event?.target?.files?.[0];
-
-    if (!file) return;
-
-    // Create a FileReader to read the file's content
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      if (!e?.target?.result) return;
-
-      const imageData = e.target.result;
-      setSrc(imageData.toString());
-    };
-    reader.readAsDataURL(file);
-  };
-
   return (
-    <Container maxWidth="xl">
-      <Typography variant="h1">Fabric Mobile</Typography>
-      <input
-        type="file"
-        accept="image/*"
-        capture="environment"
-        onChange={handleFileChange}
-      />
-      {src && <img src={src} width={"100%"} />}
-    </Container>
+    <PageContainer>
+      <TopBar>
+        <TopNavbar />
+      </TopBar>
+
+      <Content>
+        {new Array(1200).fill(0).map((_, index) => (
+          <Typography key={index}>{index}</Typography>
+        ))}
+      </Content>
+
+      <BottomNav>
+        <NavigationBar />
+      </BottomNav>
+    </PageContainer>
   );
 }
