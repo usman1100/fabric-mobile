@@ -24,10 +24,9 @@ export const TopBar = styled(AppBar)(() => ({
 export const Content = styled(Box)(() => ({
   flexGrow: 1,
   overflowY: "auto",
-  marginTop: `${TOP_NAV_HEIGHT}vh`, // Same as TopBar height
-  marginBottom: `${BOTTOM_NAV_HEIGHT}vh`, // Same as BottomNav height
-  height: `${TOP_NAV_HEIGHT + BOTTOM_NAV_HEIGHT}vh`,
-  padding: '2%'
+  marginTop: `${TOP_NAV_HEIGHT}vh`,
+  marginBottom: `${BOTTOM_NAV_HEIGHT}vh`,
+  height: "auto",
 }));
 
 export const BottomNav = styled(BottomNavigation)(({ theme }) => ({

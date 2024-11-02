@@ -11,6 +11,7 @@ export const theme = createTheme({
       "-apple-system",
       "BlinkMacSystemFont",
       '"Segoe UI"',
+      "Poppins",
       "Roboto",
       '"Helvetica Neue"',
       "Arial",

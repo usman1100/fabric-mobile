@@ -15,10 +15,8 @@ export default function App() {
         <TopNavbar />
       </TopBar>
 
-      <Content>
-        {new Array(1200).fill(0).map((_, index) => (
-          <Typography key={index}>{index}</Typography>
-        ))}
+      <Content p={2}>
+        <Typography variant="h3">Welcome</Typography>
       </Content>
 
       <BottomNav>
