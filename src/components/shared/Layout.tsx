@@ -1,7 +1,7 @@
-import { AppBar, BottomNavigation, Box } from "@mui/material";
+import { BottomNavigation, Box } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-const BOTTOM_NAV_HEIGHT = 5;
+const BOTTOM_NAV_HEIGHT = 7;
 const TOP_NAV_HEIGHT = 5;
 
 export const PageContainer = styled(Box)(() => ({
@@ -12,7 +12,7 @@ export const PageContainer = styled(Box)(() => ({
   overflow: "hidden",
 }));
 
-export const TopBar = styled(AppBar)(() => ({
+export const TopBar = styled(Box)(() => ({
   height: `${TOP_NAV_HEIGHT}vh`,
   position: "fixed",
   justifyContent: "center",

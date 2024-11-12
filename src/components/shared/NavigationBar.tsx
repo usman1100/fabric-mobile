@@ -18,7 +18,7 @@ export const NavigationBar = () => {
     <Stack direction={"row"}>
       {NAV_ITEMS.map((item) => (
         <IconButton sx={{ mx: "auto" }} key={item.label}>
-          <item.icon />
+          <item.icon fontSize="large" />
         </IconButton>
       ))}
     </Stack>

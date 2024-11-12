@@ -1,11 +1,11 @@
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import {
   BottomNav,
   Content,
   NavigationBar,
   PageContainer,
   TopBar,
-  TopNavbar
+  TopNavbar,
 } from "../components/shared";
 
 export const DashboardPage = () => {
@@ -16,11 +16,7 @@ export const DashboardPage = () => {
       </TopBar>
 
       <Content p={2}>
-        <Typography variant="h3">Welcome</Typography>
-
-        <Button variant="contained" color="secondary">
-          Get Started
-        </Button>
+        <Typography variant="h3">Dashboard</Typography>
       </Content>
 
       <BottomNav>
@@ -28,4 +24,4 @@ export const DashboardPage = () => {
       </BottomNav>
     </PageContainer>
   );
-}
+};
