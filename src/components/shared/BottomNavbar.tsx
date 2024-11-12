@@ -1,19 +1,19 @@
 import { IconButton, Stack } from "@mui/material";
-import Home from "@mui/icons-material/Home";
-import CameraAltIcon from "@mui/icons-material/CameraAlt";
+import GetAppOutlinedIcon from '@mui/icons-material/GetAppOutlined';
+import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
 
 const NAV_ITEMS = [
   {
-    label: "Home",
-    icon: Home,
+    label: "Download",
+    icon: GetAppOutlinedIcon,
   },
   {
     label: "Camera",
-    icon: CameraAltIcon,
+    icon: CameraAltOutlinedIcon,
   },
 ];
 
-export const NavigationBar = () => {
+export const BottomNavbar = () => {
   return (
     <Stack direction={"row"}>
       {NAV_ITEMS.map((item) => (

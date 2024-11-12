@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import {
   BottomNav,
   Content,
-  NavigationBar,
+  BottomNavbar,
   PageContainer,
   TopBar,
   TopNavbar,
@@ -20,7 +20,7 @@ export const DashboardPage = () => {
       </Content>
 
       <BottomNav>
-        <NavigationBar />
+        <BottomNavbar />
       </BottomNav>
     </PageContainer>
   );

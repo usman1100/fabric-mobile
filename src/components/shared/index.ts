@@ -1,3 +1,3 @@
 export * from './Layout'
-export * from './NavigationBar'
+export * from './BottomNavbar'
 export * from './TopNavbar'

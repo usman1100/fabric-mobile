@@ -1,7 +1,7 @@
 import { BottomNavigation, Box } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-const BOTTOM_NAV_HEIGHT = 7;
+const BOTTOM_NAV_HEIGHT = 6;
 const TOP_NAV_HEIGHT = 5;
 
 export const PageContainer = styled(Box)(() => ({
