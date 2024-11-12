@@ -6,9 +6,9 @@ import {
   PageContainer,
   TopBar,
   TopNavbar
-} from "./components/shared";
+} from "../components/shared";
 
-export default function App() {
+export const DashboardPage = () => {
   return (
     <PageContainer>
       <TopBar>

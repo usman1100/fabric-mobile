@@ -1,11 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App.tsx";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { theme } from "./theme.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { HomePage } from "./components/pages/HomePage.tsx";
+import { HomePage, DashboardPage } from "./pages";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <App />,
+    element: <DashboardPage />,
   },
 ]);
 
